@@ -13,6 +13,14 @@ document.addEventListener('DOMContentLoaded', function() {
             albumArt.src = imgSrc;
             audioPlayer.load();
             audioPlayer.play();
+
+            // Remove 'active' class from all playlist items
+            playlistItems.forEach(function(item) {
+                item.classList.remove('active');
+            });
+
+            // Add 'active' class to the clicked playlist item
+            this.classList.add('active');
         });
     });
 });

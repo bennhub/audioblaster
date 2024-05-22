@@ -5,23 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Audio Player with Playlist</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <h1 class="title">Fox & Hayes | Daze of Wunder | EP   </h1>
-        <div class="player">
-            <div class="imgbx">
-                <img id="albumArt" src="img/albumcover1.jpeg" alt="Album Art">
+        <div class="title-container">
+            <h1 class="title">Fox & Hayes | Daze of Wunder | EP</h1>
+        </div>
+        <div class="player-container">
+            <div class="player">
+                <div class="imgbx">
+                    <img id="albumArt" src="img/albumcover1.jpeg" alt="Album Art">
+                </div>
+                <audio controls id="audioPlayer">
+                    <source src="audio/bounce - master_with_preset.mp3" type="audio/mpeg">
+                </audio>
+                <ul class="playlist">
+                    <li data-src="audio/bounce - master_with_preset.mp3" data-img="img/albumcover1.jpeg">Bounce</li>
+                    <li data-src="audio/that's Cool_with_master_preset.mp3" data-img="https://th.bing.com/th/id/OIG4.XXjnEs3SIAJDFzOT7Ppo?pid=ImgGn">That's Cool</li>
+                    <li data-src="audio/Lions Mane - master_with_preset.mp3" data-img="https://th.bing.com/th/id/OIG1.wuocEpfyYtyMvvVhwDYz?pid=ImgGn">Lions Mane</li>
+                </ul>
             </div>
-            <audio controls id="audioPlayer">
-                <source src="audio/bounce - master_with_preset.mp3" type="audio/mpeg">
-            </audio>
-            <ul class="playlist">
-                <li data-src="audio/bounce - master_with_preset.mp3" data-img="img/albumcover1.jpeg">Bounce</li>
-                <li data-src="audio/that's Cool_with_master_preset.mp3" data-img="https://th.bing.com/th/id/OIG4.XXjnEs3SIAJDFzOT7Ppo?pid=ImgGn">That's Cool</li>
-                <li data-src="audio/Lions Mane - master_with_preset.mp3" data-img="https://th.bing.com/th/id/OIG1.wuocEpfyYtyMvvVhwDYz?pid=ImgGn">Lions Mane</li>
-            </ul>
-        
+
+            <div class="social-media">
+                <a href="#" target="_blank"><i class="fab fa-bandcamp"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-soundcloud"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
         </div>
     </div>
     <script src="scripts.js"></script>
