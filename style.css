@@ -11,7 +11,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(44deg, #e91e63, #fffde7);
+    background: linear-gradient(44deg, #ffc509, #fffde7);
     font-family: 'Roboto', sans-serif; /* Apply font to the whole body */
 }
 
