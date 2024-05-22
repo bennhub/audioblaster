@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Player with Playlist</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Fox & Hayes | Daze of Wunder | EP   </h1>
+        <div class="player">
+            <div class="imgbx">
+                <img id="albumArt" src="https://th.bing.com/th/id/OIG4.XXjnEs3SIAJDFzOT7Ppo?pid=ImgGn" alt="Album Art">
+            </div>
+            <audio controls id="audioPlayer" muted>
+                <source src="http://physical-authority.surge.sh/music/2.mp3" type="audio/mpeg">
+            </audio>
+            <ul class="playlist">
+                <li data-src="http://physical-authority.surge.sh/music/2.mp3" data-img="https://th.bing.com/th/id/OIG4.XXjnEs3SIAJDFzOT7Ppo?pid=ImgGn">That's Cool</li>
+                <li data-src="http://physical-authority.surge.sh/music/3.mp3" data-img="https://th.bing.com/th/id/OIG4.zJYA3yOPg_HOjjk0fseQ?pid=ImgGn">Bounce</li>
+                <li data-src="http://physical-authority.surge.sh/music/4.mp3" data-img="https://th.bing.com/th/id/OIG1.wuocEpfyYtyMvvVhwDYz?pid=ImgGn">Tidal Wave</li>
+            </ul>
+        
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
