@@ -1,5 +1,6 @@
  # Custom Audio Player
 Welcome to the Custom Audio Player! This project features a fully functional audio player with support for playlists, track images, and download options. 
+Light weight, built with JS, HTML5, CSS,
 Check it out here:
 https://bennhub.github.io/customplayer
 
