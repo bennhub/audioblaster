@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Iframe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        .iframe-wrapper {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            max-width: 350px;
+            height: 0;
+            padding-bottom: calc(522 / 350 * 100%);
+            transform: translate(-50%, -50%);
+            overflow: hidden;
+        }
+
+        .iframe-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .iframe-container iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        .social-media {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .social-media a {
+            margin-right: 10px;
+            color: #333;
+            font-size: 35px;
+        }
+    </style>
+</head>
+<body>
+    <div class="iframe-wrapper">
+        <div class="iframe-container">
+            <iframe src="https://bandcamp.com/EmbeddedPlayer/album=3062569695/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless>
+                <a href="https://foxandhayes.bandcamp.com/album/fox-hayes">Fox &amp; Hayes by Fox and Hayes</a>
+            </iframe>
+        </div>
+    </div>
+
+    <div class="social-media">
+        <a href="https://foxandhayes.bandcamp.com/" target="_blank"><i class="fab fa-bandcamp"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-s
